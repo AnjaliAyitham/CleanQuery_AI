@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+*.egg-info/
+dist/
+.venv/
+venv/
+node_modules/
+frontend/dist/
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+uploads/
+*.log
+test_report*.pdf

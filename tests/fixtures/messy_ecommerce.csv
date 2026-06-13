@@ -1,0 +1,41 @@
+th@email.com,Wireless Mouse,Electronics,29.99,2,2024-01-15,123 Main St New York NY 10001,Credit Card,Completed
+1002,Jane Doe,jane.doe@gmail.com,USB-C Cable,Electronics,12.5order_id,customer_name,email,product,category,price,quantity,order_date,shipping_address,payment_method,status
+1001,John Smith,john.smi0,1,01/16/2024,456 Oak Ave Los Angeles CA 90001,PayPal,Completed
+1003,Bob Johnson,bob.j@yahoo.com,Office Chair,Furniture,249.99,1,2024-01-17,789 Pine Rd Chicago IL 60601,Credit Card,Shipped
+1004,Alice Williams,alice.w@email.com,Desk Lamp,Furniture,$34.99,3,Jan 18 2024,321 Elm St Houston TX 77001,Debit Card,Completed
+1005,John Smith,john.smith@email.com,Wireless Mouse,Electronics,29.99,2,2024-01-15,123 Main St New York NY 10001,Credit Card,Completed
+1006,Charlie Brown,charlie.b@email.com,Laptop Stand,Electronics,,1,2024-01-19,654 Maple Dr Phoenix AZ 85001,Credit Card,Pending
+1007,Diana Prince,diana.p@email.com,Mechanical Keyboard,Electronics,89.99,1,19/01/2024,987 Cedar Ln Philadelphia PA 19101,PayPal,Shipped
+1008,Eve Wilson,,Standing Desk,Furniture,599.99,1,2024-01-20,147 Birch Way San Antonio TX 78201,Credit Card,Completed
+1009,Frank Miller,frank.m@email.com,Monitor Arm,Electronics,45.00,2,2024-01-21,258 Walnut St San Diego TX 92101,VISA,Shipped
+1010,Grace Lee,grace.lee@email.com,Webcam HD,Electronics,67.99,1,2024/01/22,369 Spruce Ave Dallas TX 75201,Credit Card,Completed
+1011,Henry Ford,henry.f@email.com,Ergonomic Mouse,electronics,39.99,1,2024-01-23,741 Ash Blvd San Jose CA 95101,Mastercard,Pending
+1012,Ivy Chen,ivy.chen@email.com,USB Hub,Electronics,24.99,-3,2024-01-24,852 Poplar St Austin TX 78701,PayPal,Completed
+1013,Jack Wilson,jack.w@email.com,Desk Organizer,Office Supplies,15.99,2,24-01-2024,963 Cypress Dr Jacksonville FL 32099,Credit Card,Shipped
+1014,Karen White,karen.w@email.com,Blue Light Glasses,Accessories,29.99,1,2024-01-26,,Credit Card,Completed
+1015,Bob Johnson,bob.j@yahoo.com,Office Chair,Furniture,249.99,1,2024-01-17,789 Pine Rd Chicago IL 60601,Credit Card,Shipped
+1016,Leo Martinez,leo.m@email.com,Wireless Charger,Electronics,19.99,2,2024-01-27,174 Hickory Ln Columbus OH 43004,PayPal,Completed
+1017,Mia Taylor,mia.t@email.com,Noise Cancelling Headphones,Electronics,199.99,1,January 28 2024,285 Sequoia St Fort Worth TX 76101,Credit Card,Shipped
+1018,Noah Garcia,noah.g@email.com,HDMI Cable,Electronics,8.99,5,2024-01-29,396 Redwood Ave Charlotte NC 28201,Debit Card,Completed
+1019,Olivia Brown,olivia.b@email.com,Laptop Bag,Accessories,49.99,1,2024-01-30,507 Willow Dr Indianapolis IN 46201,Credit Card,Pending
+1020,Peter Parker,peter.p@email.com,Spider Cam,Electronics,9999.99,1,2024-01-31,618 Fir St San Francisco CA 94101,Credit Card,Completed
+1021,Quinn Adams,quinn.a@email.com,Desk Mat,Office Supplies,22.50,2,2024-02-01,729 Magnolia Way Seattle WA 98101,PayPal,Shipped
+1022,Rachel Green,rachel.g@email.com,Plant Pot,,12.99,4,2024-02-02,840 Dogwood Rd Denver CO 80201,Credit Card,Completed
+1023,Sam Johnson,sam.j@email.com,Cable Management Kit,Electronics,18.99,1,02/03/2024,951 Beech St El Paso TX 79901,Credit Card,completed
+1024,Tina Turner,tina.t@email.com,Ring Light,Electronics,35.99,1,2024-02-04,162 Palm Ave Nashville TN 37201,paypal,Shipped
+1025,,unknown@test.com,Test Product,Unknown,0.00,0,2024-02-05,N/A,N/A,Unknown
+1026,Victor Hugo,victor.h@email.com,Wireless Mouse,Electronics,29.99,2,2024-01-15,123 Main St New York NY 10001,Credit Card,Completed
+1027,Wendy Clark,wendy.c@email.com,Monitor 27 inch,Electronics,349.99,1,2024-02-06,273 Juniper St Memphis TN 38101,Credit Card,Shipped
+1028,Xavier Ross,xavier.r@email.com,Keyboard Wrist Rest,Accessories,14.99,2,6th Feb 2024,384 Olive Way Louisville KY 40201,Debit Card,Completed
+1029,Yuki Tanaka,yuki.t@email.com,USB Microphone,Electronics,79.99,1,2024-02-07,495 Sycamore Dr Portland OR 97201,Credit Card,Pending
+1030,Zara Khan,zara.k@email.com,Webcam Cover,Accessories,4.99,10,2024-02-08,606 Chestnut Ave Oklahoma City OK 73101,PayPal,Completed
+1031,John Smith,john.smith@email.com,Wireless Mouse,Electronics,29.99,2,2024-01-15,123 Main St New York NY 10001,Credit Card,Completed
+1032,Amy Zhang,amy.z@email.com,Standing Desk Mat,Furniture,45.00,1,2024-02-09,717 Hawthorn Blvd Las Vegas NV 89101,Credit Card,Shipped
+1033,Brian Cox,brian.c@email.com,Laptop Cooling Pad,Electronics,NULL,1,2024-02-10,828 Ivy Ln Albuquerque NM 87101,Credit Card,Completed
+1034,Carol Davis,carol.d@email.com,Wireless Earbuds,Electronics,59.99,1,10-02-2024,939 Laurel St Tucson AZ 85701,Credit Card,Shipped
+1035,David Lee,david.l@email.com,Phone Stand,Accessories,$9.99,3,2024-02-11,150 Rose Way Fresno CA 93701,PayPal,Completed
+1036,Emma Stone,emma.s@email.com,Portable SSD,Electronics,89.99,1,2024-02-12,261 Violet Dr Sacramento CA 95801,Credit Card,Pending
+1037,Fred Jones,fred.j@email.com,Drawing Tablet,Electronics,199.99,1,Feb 13 2024,372 Daisy Ave Long Beach CA 90801,Credit Card,Shipped
+1038,Gina Rossi,gina.r@email.com,Webcam HD,Electronics,67.99,500,2024-02-14,483 Tulip St Kansas City MO 64101,Debit Card,Completed
+1039,Hans Mueller,hans.m@email.com,Mouse Pad XL,Accessories,19.99,2,2024-02-15,594 Sunflower Rd Mesa AZ 85201,Credit Card,Completed
+1040,Iris Park,iris.p@email.com,USB Flash Drive,Electronics,12.99,5,2024-02-16,705 Lily Ln Atlanta GA 30301,PayPal,Shipped

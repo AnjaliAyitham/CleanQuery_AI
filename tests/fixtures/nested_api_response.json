@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "data": [
+    {"id": 1, "user": {"name": "Alice", "age": 30}, "purchases": 15, "last_active": "2024-01-10T08:30:00Z"},
+    {"id": 2, "user": {"name": "Bob", "age": 25}, "purchases": 3, "last_active": "2024-02-15T14:22:00Z"},
+    {"id": 3, "user": {"name": "Charlie", "age": null}, "purchases": 42, "last_active": "2024-03-01T09:00:00Z"},
+    {"id": 4, "user": {"name": "", "age": 28}, "purchases": 0, "last_active": "invalid-date"},
+    {"id": 5, "user": {"name": "Eve", "age": 35}, "purchases": -1, "last_active": "2024-01-20T16:45:00Z"}
+  ]
+}
