@@ -234,27 +234,41 @@ export default function DataCleansingPage() {
     <div className="min-h-screen -m-8 bg-[#E8F4FD]">
       <div className="max-w-4xl mx-auto px-8 py-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-10"
-        >
-          <img
+        <div className="text-center mb-10">
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             src="https://edge.sitecorecloud.io/perficienti28ad-prft2d8b-prod513c-63c8/media/project/perficient-public/prft-public-site/logos/perficient/logo_perficient_full-color_registered-300.svg?iar=0"
             alt="Perficient"
             className="h-9 w-auto mx-auto mb-5"
           />
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B365D]/5 border border-[#1B365D]/10 mb-4">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B365D]/5 border border-[#1B365D]/10 mb-4"
+          >
             <Sparkles size={13} className="text-[#E87722]" />
             <span className="text-xs text-[#1B365D] font-medium">AI-Powered Data Analysis</span>
-          </div>
-          <h1 className="text-3xl font-bold text-[#1B365D] mb-2">
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-3xl font-bold text-[#1B365D] mb-2"
+          >
             Upload. Analyze. Download.
-          </h1>
-          <p className="text-[#1B365D]/60 text-base max-w-lg mx-auto">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-[#1B365D]/60 text-base max-w-lg mx-auto"
+          >
             Drop your CSV or Excel file — our AI agents clean it, find relationships, and generate a complete KPI report as PDF.
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
 
         {/* History Toggle */}
         {history.length > 0 && (
@@ -307,35 +321,42 @@ export default function DataCleansingPage() {
           {status === 'idle' && (
             <motion.div
               key="upload"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              exit={{ opacity: 0, y: -20, transition: { duration: 0.2 } }}
+              transition={{ duration: 0.6, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <div
                 {...getRootProps()}
                 className={`relative rounded-2xl border-2 border-dashed p-14 text-center cursor-pointer transition-all duration-300 ${
                   isDragActive
-                    ? 'border-[#E87722] bg-white scale-[1.01] shadow-lg'
-                    : 'border-[#1B365D]/20 bg-white hover:border-[#E87722]/50 hover:shadow-md'
+                    ? 'border-[#1B365D] bg-white scale-[1.01] shadow-lg'
+                    : 'border-[#1B365D]/20 bg-white hover:border-[#1B365D]/40 hover:shadow-md'
                 }`}
               >
                 <input {...getInputProps()} />
                 <motion.div
                   className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-[#E8F4FD] border border-[#1B365D]/10 flex items-center justify-center"
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
                 >
                   <Upload size={28} className="text-[#1B365D]" />
                 </motion.div>
                 <h2 className="text-xl font-semibold text-[#1B365D] mb-2">
                   {isDragActive ? 'Drop it here!' : 'Drop your file here'}
                 </h2>
-                <p className="text-[#1B365D]/60 mb-5 text-sm">or click to browse</p>
+                <p className="text-[#1B365D]/50 mb-5 text-sm">or click to browse</p>
                 <div className="flex items-center justify-center gap-2">
-                  {['.csv', '.xlsx', '.json', '.pdf'].map((ext) => (
-                    <span key={ext} className="px-2.5 py-1 rounded-md bg-[#E8F4FD] border border-[#1B365D]/15 text-xs text-[#1B365D]/70 font-mono">
+                  {['.csv', '.xlsx', '.json', '.pdf'].map((ext, i) => (
+                    <motion.span
+                      key={ext}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.7 + i * 0.1 }}
+                      className="px-2.5 py-1 rounded-md bg-[#E8F4FD] border border-[#1B365D]/15 text-xs text-[#1B365D]/70 font-mono"
+                    >
                       {ext}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -414,8 +435,9 @@ export default function DataCleansingPage() {
           {status === 'done' && result && (
             <motion.div
               key="results"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="space-y-6"
             >
               {/* File info + Download buttons */}
