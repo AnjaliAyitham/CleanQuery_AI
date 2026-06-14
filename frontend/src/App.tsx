@@ -12,7 +12,7 @@ function App() {
           className="h-8 w-auto brightness-0 invert mb-8"
         />
         <div className="space-y-2">
-          <div className="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#E87722]/20 text-[#E87722]">
+          <div className="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#E8F4FD] text-[#1B365D]">
             <Sparkles size={20} />
             <span className="font-medium">DataDLC</span>
           </div>

@@ -465,14 +465,14 @@ export default function DataCleansingPage() {
 
               {/* KPI Cards */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <KpiCard label="Rows Cleaned" before={result.raw_kpis.row_count} after={result.clean_kpis.row_count} icon={Table} />
-                <KpiCard label="Issues Fixed" value={result.cleaning_log.length} icon={Wrench} color="amber" />
+                <KpiCard label="Rows Cleaned" before={result.raw_kpis.row_count} after={result.clean_kpis.row_count} icon={Table} delay={0} />
+                <KpiCard label="Issues Fixed" value={result.cleaning_log.length} icon={Wrench} color="amber" delay={0.1} />
                 <KpiCard label="Relationships Found" value={
                   result.relationships.strong_correlations.length +
                   result.relationships.categorical_associations.length +
                   result.relationships.numeric_categorical.length
-                } icon={Link2} color="purple" />
-                <KpiCard label="Insights" value={result.insights.length} icon={Lightbulb} color="green" />
+                } icon={Link2} color="purple" delay={0.2} />
+                <KpiCard label="Insights" value={result.insights.length} icon={Lightbulb} color="green" delay={0.3} />
               </div>
 
               {/* Tab Navigation */}
@@ -719,6 +719,7 @@ function KpiCard({
   after,
   icon: Icon,
   color = 'indigo',
+  delay = 0,
 }: {
   label: string
   value?: number
@@ -726,6 +727,7 @@ function KpiCard({
   after?: number
   icon: React.ComponentType<{ size?: number | string; className?: string }>
   color?: string
+  delay?: number
 }) {
   const colorMap: Record<string, string> = {
     indigo: 'bg-white border-[#1B365D]/10 text-[#1B365D]',
@@ -742,10 +744,11 @@ function KpiCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      whileHover={{ y: -2 }}
-      className={`rounded-xl p-4 ${bgClass} border ${borderClass} shadow-sm`}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
+      whileHover={{ y: -3, transition: { duration: 0.2 } }}
+      className={`rounded-xl p-4 ${bgClass} border ${borderClass} shadow-sm hover:shadow-md transition-shadow`}
     >
       <Icon size={16} className={iconClass} />
       <p className="text-2xl font-bold text-[#1B365D] mt-2">
