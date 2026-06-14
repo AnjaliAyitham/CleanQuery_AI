@@ -202,6 +202,9 @@ def generate_categorical_chart(df: pd.DataFrame):
     return fig
 
 
+LOGO_PATH = os.path.join(os.path.dirname(__file__), "..", "assets", "perficient_logo.svg")
+
+
 def generate_pdf_report(analysis: dict, filename: str) -> bytes:
     pdf = ReportPDF(filename)
     pdf.alias_nb_pages()
@@ -212,11 +215,15 @@ def generate_pdf_report(analysis: dict, filename: str) -> bytes:
     pdf.set_fill_color(*PRFT_ORANGE)
     pdf.rect(0, 0, 210, 3, style="F")
 
-    # Perficient name
-    pdf.set_xy(12, 8)
-    pdf.set_font("Helvetica", "B", 16)
-    pdf.set_text_color(*PRFT_NAVY)
-    pdf.cell(0, 8, "PERFICIENT", new_x="LMARGIN", new_y="NEXT")
+    # Perficient logo
+    pdf.set_xy(12, 7)
+    if os.path.exists(LOGO_PATH):
+        pdf.image(LOGO_PATH, x=12, y=7, w=45)
+        pdf.set_y(20)
+    else:
+        pdf.set_font("Helvetica", "B", 16)
+        pdf.set_text_color(*PRFT_NAVY)
+        pdf.cell(0, 8, "PERFICIENT", new_x="LMARGIN", new_y="NEXT")
 
     # Thin separator
     pdf.set_draw_color(*PRFT_NAVY)
